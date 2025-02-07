@@ -2,7 +2,7 @@ import redis
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(override=True)
 db_host = os.getenv("DB_HOSTNAME")
 db_port = int(os.getenv("DB_PORT", 6379))
 
